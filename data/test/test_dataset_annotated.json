@@ -1,0 +1,22 @@
+[
+  {
+    "question": "Quels sont les événements prévus à Paris ce week-end ?",
+    "reference_answer": "Il y a plusieurs événements à Paris ce week-end, notamment des concerts, des expositions et des ateliers. Veuillez consulter les détails spécifiques pour les dates exactes.",
+    "category": "general"
+  },
+  {
+    "question": "Y a-t-il des concerts de jazz gratuits ?",
+    "reference_answer": "Oui, certains concerts de jazz sont gratuits. Vérifiez les conditions d'entrée pour chaque événement spécifique.",
+    "category": "specific"
+  },
+  {
+    "question": "Où se trouve l'Hôtel de Ville ?",
+    "reference_answer": "L'Hôtel de Ville de Paris est situé Place de l'Hôtel de Ville, 75004 Paris.",
+    "category": "location"
+  },
+  {
+    "question": "Quelles expositions voir au Marais ?",
+    "reference_answer": "Le quartier du Marais propose souvent des expositions d'art et de photographie. Consultez les événements actuels pour plus de détails.",
+    "category": "specific"
+  }
+]

@@ -1,0 +1,142 @@
+[
+  {
+    "question": "Quels concerts de jazz ont lieu ce week-end à Paris?",
+    "reference_answer": "Ce week-end, plusieurs concerts de jazz sont programmés à Paris, notamment au Sunset-Sunside dans le quartier des Halles et au Duc des Lombards dans le Marais. Consultez les liens pour les horaires précis.",
+    "category": "specific",
+    "keywords": ["jazz", "concert", "week-end"],
+    "expected_sources": []
+  },
+  {
+    "question": "Expositions d'art gratuites dans le Marais",
+    "reference_answer": "Le Marais accueille plusieurs galeries d'art proposant des expositions gratuites. Les principales galeries se trouvent rue de Turenne et rue Charlot.",
+    "category": "specific",
+    "keywords": ["art", "exposition", "gratuit", "marais"],
+    "expected_sources": []
+  },
+  {
+    "question": "Événements pour enfants samedi prochain",
+    "reference_answer": "Samedi prochain, plusieurs événements pour enfants sont prévus: ateliers créatifs, spectacles de marionnettes, et animations dans les bibliothèques municipales.",
+    "category": "specific",
+    "keywords": ["enfants", "samedi", "famille"],
+    "expected_sources": []
+  },
+  {
+    "question": "Spectacles de théâtre contemporain cette semaine",
+    "reference_answer": "Cette semaine, le théâtre contemporain est à l'honneur avec plusieurs créations dans les théâtres parisiens. Consultez la programmation des théâtres de la Colline, du Rond-Point et de l'Odéon.",
+    "category": "specific",
+    "keywords": ["théâtre", "contemporain", "semaine"],
+    "expected_sources": []
+  },
+  {
+    "question": "Que faire à Paris ce soir?",
+    "reference_answer": "Ce soir à Paris, vous avez l'embarras du choix: concerts, expositions, projections de films, spectacles de théâtre et danse. Je vous recommande de consulter les événements par catégorie selon vos préférences.",
+    "category": "vague",
+    "keywords": ["ce soir", "paris"],
+    "expected_sources": []
+  },
+  {
+    "question": "Événements culturels gratuits",
+    "reference_answer": "De nombreux événements culturels gratuits sont disponibles: expositions dans les musées municipaux, concerts dans les églises, projections en plein air, et festivals de rue.",
+    "category": "vague",
+    "keywords": ["gratuit", "culturel"],
+    "expected_sources": []
+  },
+  {
+    "question": "Festivals de musique en plein air",
+    "reference_answer": "Les festivals de musique en plein air se déroulent principalement en été à Paris, dans des lieux comme le parc de la Villette, le jardin des Tuileries et les Berges de Seine.",
+    "category": "specific",
+    "keywords": ["festival", "musique", "plein air"],
+    "expected_sources": []
+  },
+  {
+    "question": "Visites guidées du patrimoine architectural",
+    "reference_answer": "Des visites guidées du patrimoine architectural parisien sont organisées régulièrement par Paris Historique, le Centre des monuments nationaux et les mairies d'arrondissement.",
+    "category": "specific",
+    "keywords": ["visite guidée", "patrimoine", "architecture"],
+    "expected_sources": []
+  },
+  {
+    "question": "Ateliers créatifs pour adultes",
+    "reference_answer": "De nombreux ateliers créatifs pour adultes sont proposés: poterie, peinture, photographie, écriture créative, dans des centres culturels et espaces associatifs.",
+    "category": "specific",
+    "keywords": ["atelier", "créatif", "adulte"],
+    "expected_sources": []
+  },
+  {
+    "question": "Projections de films en version originale",
+    "reference_answer": "Les cinémas d'art et essai parisiens proposent de nombreuses projections en version originale: le Champo, le Grand Action, le Reflet Médicis, et le Studio des Ursulines.",
+    "category": "specific",
+    "keywords": ["film", "cinéma", "version originale"],
+    "expected_sources": []
+  },
+  {
+    "question": "Concerts de musique classique gratuits",
+    "reference_answer": "Des concerts de musique classique gratuits ont lieu régulièrement dans les églises parisiennes (Saint-Germain-des-Prés, Sainte-Chapelle) et lors d'événements comme la Fête de la Musique.",
+    "category": "specific",
+    "keywords": ["musique classique", "concert", "gratuit"],
+    "expected_sources": []
+  },
+  {
+    "question": "Événements le 30 février",
+    "reference_answer": "Le 30 février n'existe pas dans le calendrier. Veuillez préciser une date valide pour que je puisse vous recommander des événements.",
+    "category": "edge_case",
+    "keywords": ["date invalide"],
+    "expected_sources": []
+  },
+  {
+    "question": "asdfghjkl",
+    "reference_answer": "Je n'ai pas compris votre question. Pourriez-vous reformuler votre demande concernant les événements culturels à Paris?",
+    "category": "edge_case",
+    "keywords": ["invalid"],
+    "expected_sources": []
+  },
+  {
+    "question": "Combien coûte un billet de métro?",
+    "reference_answer": "Cette question ne concerne pas les événements culturels. Je suis spécialisé dans les recommandations d'événements à Paris. Pour les tarifs de transport, consultez le site de la RATP.",
+    "category": "edge_case",
+    "keywords": ["hors sujet"],
+    "expected_sources": []
+  },
+  {
+    "question": "Expositions photo dans le 11ème arrondissement",
+    "reference_answer": "Le 11ème arrondissement accueille plusieurs expositions photographiques dans ses galeries d'art et centres culturels, notamment dans le quartier Bastille et autour de la place de la République.",
+    "category": "specific",
+    "keywords": ["photo", "exposition", "11ème"],
+    "expected_sources": []
+  },
+  {
+    "question": "Soirées dansantes et bals populaires",
+    "reference_answer": "Des bals populaires et soirées dansantes sont organisés régulièrement: guinguettes au bord de l'eau, bals dans les mairies, et soirées swing dans des salles de danse.",
+    "category": "specific",
+    "keywords": ["danse", "bal", "soirée"],
+    "expected_sources": []
+  },
+  {
+    "question": "Marchés aux puces et brocantes",
+    "reference_answer": "Les principaux marchés aux puces se trouvent à Saint-Ouen, Vanves et Montreuil. Des brocantes et vide-greniers sont également organisés régulièrement dans les quartiers.",
+    "category": "specific",
+    "keywords": ["marché", "brocante", "puces"],
+    "expected_sources": []
+  },
+  {
+    "question": "Spectacles de magie et mentalisme",
+    "reference_answer": "Paris compte plusieurs théâtres spécialisés dans la magie: le Double Fond, le musée de la Magie, et des représentations dans divers cabarets et salles de spectacle.",
+    "category": "specific",
+    "keywords": ["magie", "spectacle", "mentalisme"],
+    "expected_sources": []
+  },
+  {
+    "question": "Conférences scientifiques et débats d'idées",
+    "reference_answer": "Des conférences scientifiques et débats ont lieu à la Cité des Sciences, l'Institut Pasteur, le Collège de France, et dans diverses universités et centres culturels parisiens.",
+    "category": "specific",
+    "keywords": ["conférence", "science", "débat"],
+    "expected_sources": []
+  },
+  {
+    "question": "Rencontres littéraires et dédicaces d'auteurs",
+    "reference_answer": "Les librairies parisiennes organisent régulièrement des rencontres littéraires et séances de dédicaces. Consultez la programmation de Shakespeare and Company, Mollat, et les librairies indépendantes.",
+    "category": "specific",
+    "keywords": ["littérature", "livre", "dédicace"],
+    "expected_sources": []
+  }
+]

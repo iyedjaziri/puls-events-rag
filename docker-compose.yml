@@ -1,0 +1,75 @@
+version: '3.8'
+
+services:
+  rag-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: puls-events-rag-api
+    ports:
+      - "8000:8000"
+    environment:
+      - MISTRAL_API_KEY=${MISTRAL_API_KEY}
+      - FAISS_INDEX_PATH=/app/faiss_index/events.index
+      - METADATA_PATH=/app/faiss_index/metadata.pkl
+      - CONFIG_PATH=/app/faiss_index/config.json
+      - TOP_K=5
+      - LOG_LEVEL=INFO
+    volumes:
+      - ./faiss_index:/app/faiss_index:ro
+      - ./logs:/app/logs
+      - ./data:/app/data:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 4G
+        reservations:
+          cpus: '1'
+          memory: 2G
+    networks:
+      - rag-network
+
+  # Optional: Redis for caching
+  redis:
+    image: redis:7-alpine
+    container_name: puls-events-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    restart: unless-stopped
+    networks:
+      - rag-network
+    command: redis-server --appendonly yes
+
+  # Optional: Nginx reverse proxy
+  nginx:
+    image: nginx:alpine
+    container_name: puls-events-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - rag-api
+    restart: unless-stopped
+    networks:
+      - rag-network
+
+volumes:
+  redis-data:
+    driver: local
+
+networks:
+  rag-network:
+    driver: bridge
